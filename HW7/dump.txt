@@ -1,0 +1,3 @@
+mysqldump -u root -p geodata _regions | gzip > `data + C:\Program Files\MySQL\MySQL Server 8.0\bin\geo_regions_dump.sql.%Y%m%d.%H%M%S.gz`
+*удаляю таблицу в Workbench*
+gunzip < C:\Program Files\MySQL\MySQL Server 8.0\bin\geo_regions_dump.sql.gz | mysql -u root -p geodata
